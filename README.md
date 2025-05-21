@@ -52,7 +52,7 @@ A 2D tower defense game set in the Bleach universe, where players defend against
 
 2. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/TowerDefenseGame.git
+   git clone https://github.com/Wsh7Ash/TowerDefenseGame.git
    cd TowerDefenseGame
    ```
 
