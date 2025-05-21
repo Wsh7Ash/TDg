@@ -5,17 +5,26 @@ A 2D tower defense game set in the Bleach universe, where players defend against
 ## Features
 
 - 2D tower defense gameplay with Bleach-themed content
-- Multiple tower types based on different Zanpakuto abilities:
-  - Zanpakuto: Basic melee tower
-  - Kido: Magic-based tower
-  - Shikai: First release tower
-  - Bankai: Final release tower
+- Multiple tower types based on different spiritual powers:
+  - Zanpakuto: Basic melee tower with Shikai and Bankai releases
+  - Kido: Magic-based tower with Hado, Bakudo, and Kaido spells
+  - Quincy: Ranged tower with different arrow types and spirit particles
+  - Fullbring: Environmental manipulation tower
 - Enemy types from the Bleach universe:
   - Hollow: Basic enemy
   - Gillian: Medium enemy
   - Adjucha: Advanced enemy
   - Vasto Lorde: Boss enemy
   - Arrancar: Special enemy
+- Advanced visual effects system:
+  - Area effects (spell circles, barriers)
+  - Particle effects (spirit particles, energy bursts)
+  - Buff/debuff effects with stack counts
+  - Environmental effects
+- Sound system with:
+  - Dynamic music system
+  - Sound effects for all actions
+  - Volume control for different categories
 - Upgrade system for towers and abilities
 - Custom map editor
 - Resource management and strategic gameplay
@@ -76,21 +85,25 @@ A 2D tower defense game set in the Bleach universe, where players defend against
    - Basic melee tower
    - Good for early game
    - Can be upgraded to Shikai and Bankai
+   - Special abilities based on different Zanpakuto types
 
 2. Kido Tower
    - Magic-based tower
-   - Slower attack speed but higher damage
+   - Three spell types: Hado (attack), Bakudo (binding), Kaido (healing)
+   - Spell charge system for powerful abilities
    - Good against groups of enemies
 
-3. Shikai Tower
-   - First release of Zanpakuto
-   - Increased range and damage
-   - Special abilities based on different Zanpakuto types
+3. Quincy Tower
+   - Ranged tower with different arrow types
+   - Spirit particle system for enhanced attacks
+   - Special abilities: Vollstandig and Letzt Stil
+   - Good for long-range combat
 
-4. Bankai Tower
-   - Final release of Zanpakuto
-   - Highest damage and range
-   - Unique ultimate abilities
+4. Fullbring Tower
+   - Environmental manipulation tower
+   - Three object types: Paper, Metal, Liquid
+   - Environmental charge system
+   - Good for area control
 
 ## Enemy Types
 
@@ -128,15 +141,48 @@ TowerDefenseGame/
 │   ├── managers/          # Resource and state management
 │   ├── ui/               # User interface components
 │   ├── renderer/         # Rendering system
+│   ├── effects/          # Visual and sound effects
 │   └── map/              # Map handling and editor
 ├── include/               # Header files
 ├── resources/            # Game assets
 │   ├── textures/        # Images and sprites
 │   ├── fonts/          # Font files
-│   ├── sounds/         # Sound effects
+│   ├── sounds/         # Sound effects and music
 │   └── maps/           # Map files
 └── CMakeLists.txt       # Build configuration
 ```
+
+## Next Steps
+
+1. Tower Selection and Placement System
+   - Implement tower selection UI
+   - Add placement preview
+   - Add placement validation
+   - Implement tower rotation
+
+2. Upgrade System UI
+   - Create upgrade menu
+   - Add upgrade previews
+   - Implement upgrade effects
+   - Add upgrade costs display
+
+3. Text Rendering System
+   - Add font loading
+   - Implement text effects
+   - Add damage numbers
+   - Add UI text elements
+
+4. Game State Management
+   - Implement wave system
+   - Add score tracking
+   - Add resource management
+   - Implement game progression
+
+5. Additional Features
+   - Add more tower types
+   - Implement special abilities
+   - Add more enemy types
+   - Create additional maps
 
 ## Contributing
 
