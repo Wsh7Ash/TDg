@@ -4,5 +4,3 @@
 # But not README.md
 !README.md
 
-# And not .gitignore itself
-!.gitignore 
